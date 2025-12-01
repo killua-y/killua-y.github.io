@@ -2,8 +2,10 @@ name: Daily Job Scraper
 
 on:
   schedule:
-    # Runs at 08:00 UTC every Monday through Friday
-    - cron: '0 8 * * 1-5'
+    # Runs at 09:00 PST (Pacific Standard Time)
+    # PST is UTC-8, so 09:00 PST = 17:00 UTC
+    # Note: During Daylight Saving Time (PDT, UTC-7), this will run at 10:00 PDT
+    - cron: '0 17 * * 1-5'
   workflow_dispatch: # Allows manual triggering
 
 permissions:
