@@ -83,8 +83,8 @@ def filter_and_summarize_jobs(jobs):
                 "title": job.get("title"),
                 "company": job.get("company"),
                 "location": job.get("location"),
-                # 描述截断，避免太长
-                "description": (job.get("description") or "")[:1000],
+                # 描述截断，避免太长，处理非字符串类型（如 NaN/float）
+                "description": str(job.get("description") or "")[:1000],
                 "job_type": job.get("job_type", "unknown") # 显式传递job_type
             }
         )
