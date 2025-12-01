@@ -14,7 +14,7 @@ def scrape():
     print("Starting job scrape...")
     
     # Define your search criteria here
-    site_names = ["indeed", "linkedin", "zip_recruiter", "google"]
+    site_names = ["indeed", "linkedin"]
     
     # Explicitly add "Intern" to search terms to improve result quality
     # Some sites rely on the keyword more than the filter
@@ -27,7 +27,7 @@ def scrape():
     ]
     
     location = "United States" # or specific city
-    results_wanted = 200 
+    results_wanted = 100 
     hours_old = 24 
     
     all_jobs = []
@@ -43,6 +43,7 @@ def scrape():
                 hours_old=hours_old,
                 country_indeed='USA',
                 job_type='internship', # Filter for internships
+                linkedin_fetch_description=True # Get full description from LinkedIn (slower but necessary)
             )
             print(f"Found {len(jobs)} jobs for {term}")
             all_jobs.append(jobs)

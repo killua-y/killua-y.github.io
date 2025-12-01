@@ -238,9 +238,6 @@ def main():
     # 处理全部岗位
     filtered_jobs = filter_and_summarize_jobs(jobs)
 
-    # 过滤掉低分岗位 (只保留 >= 70 分的)
-    filtered_jobs = [j for j in filtered_jobs if j.get("relevance_score", 0) >= 70]
-
     # 按分数排序，只保留前 20 个
     filtered_jobs.sort(key=lambda x: x.get("relevance_score", 0), reverse=True)
     filtered_jobs = filtered_jobs[:20]
