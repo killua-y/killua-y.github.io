@@ -235,6 +235,21 @@ def main():
     jobs = load_jobs(raw_jobs_path)
     print(f"Loaded {len(jobs)} raw jobs.")
 
+    # 去重逻辑 (基于 Title + Company)
+    # 有些岗位 URL 可能不同（带不同 tracking 参数），但其实是同一个岗位
+    unique_jobs = {}
+    for job in jobs:
+        # 创建一个唯一键：公司名 + 职位名 (转小写去除空格干扰)
+        key = (
+            (job.get("company") or "").strip().lower(),
+            (job.get("title") or "").strip().lower()
+        )
+        if key not in unique_jobs:
+            unique_jobs[key] = job
+    
+    jobs = list(unique_jobs.values())
+    print(f"After deduplication: {len(jobs)} jobs.")
+
     # 处理全部岗位
     filtered_jobs = filter_and_summarize_jobs(jobs)
 
