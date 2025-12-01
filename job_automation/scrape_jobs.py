@@ -14,7 +14,7 @@ def scrape():
     print("Starting job scrape...")
     
     # Define your search criteria here
-    site_names = ["linkedin", "indeed", "glassdoor", "google"]
+    site_names = ["linkedin"]
     
     # Explicitly add "Intern" to search terms to improve result quality
     # Some sites rely on the keyword more than the filter
