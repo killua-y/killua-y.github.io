@@ -42,6 +42,10 @@ Job preferences:
 - I prefer positions related to AI, recommender systems, data platforms, ads/RTB, or infrastructure for ML/AI products.
 - I am early-career (about 0–3 years of full-time experience).
 - I am currently in Irvine, CA and open to relocate or work remotely within the United States.
+
+IMPORTANT:
+- I am strictly looking for INTERNSHIP positions (Intern, Co-op, etc). 
+- DO NOT show me full-time roles.
 """
 
 # 你可以在这里改模型，比如改成 "gpt-5-mini"
@@ -81,6 +85,7 @@ def filter_and_summarize_jobs(jobs):
                 "location": job.get("location"),
                 # 描述截断，避免太长
                 "description": (job.get("description") or "")[:1000],
+                "job_type": job.get("job_type", "unknown") # 显式传递job_type
             }
         )
 
@@ -94,6 +99,7 @@ I will give you:
 Your tasks:
 1. Read my profile and understand my skills, experience, and preferences.
 2. Go through each job and:
+   - **CRITICAL**: Filter out ANY job that is NOT an internship or co-op. I am ONLY looking for INTERNSHIPS. If the title or description doesn't explicitly mention "intern", "internship", or "co-op", DISCARD IT.
    - Filter out jobs that are clearly irrelevant to my profile or require much more senior experience than I have.
    - For relevant jobs, produce:
      - A short 1–3 sentence summary focusing on responsibilities and tech stack.
@@ -102,6 +108,7 @@ Your tasks:
 3. Be strict about JSON format. Do NOT include any explanation outside of JSON.
 
 Important instructions:
+- **STRICTLY INTERNSHIPS ONLY**: If the job title does not contain "Intern", "Internship", or "Co-op", score it 0 and exclude it from the final list.
 - Consider my experience level (early-career / about 0–3 years of full-time experience).
 - Prefer roles that match my skills (backend, large-scale systems, ML/AI) and my interests (AI, recommender systems, ads/RTB, data platforms, etc.).
 - If a job is clearly for very senior staff (e.g., 8+ years experience, principal, staff, director), give it a very low score or simply exclude it.
@@ -130,6 +137,7 @@ Each job object should look like this:
 Rules:
 - Only include relevant or somewhat relevant jobs in the "jobs" list.
 - Do NOT include jobs that are completely irrelevant.
+- **ABSOLUTELY NO FULL-TIME ROLES**.
 - Do NOT add any extra keys outside the ones specified.
 - Do NOT write any text outside the JSON object.
 """
@@ -227,8 +235,8 @@ def main():
     jobs = load_jobs(raw_jobs_path)
     print(f"Loaded {len(jobs)} raw jobs.")
 
-    # 为了测试，先限制前 20 条，避免 prompt 太大
-    subset = jobs[:70]
+    # 为了测试，先限制前 100 条
+    subset = jobs[:100]
     filtered_jobs = filter_and_summarize_jobs(subset)
 
     if filtered_jobs:

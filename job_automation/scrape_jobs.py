@@ -14,20 +14,26 @@ def scrape():
     print("Starting job scrape...")
     
     # Define your search criteria here
-    # You can customize these lists
     site_names = ["linkedin", "indeed", "glassdoor", "google"]
     
-    # List of search terms
-    search_terms = ["Software Engineer", "SDE", "Machine Learning Engineer"]
+    # Explicitly add "Intern" to search terms to improve result quality
+    # Some sites rely on the keyword more than the filter
+    search_terms = [
+        "Software Engineer Intern", 
+        "SDE Intern", 
+        "Machine Learning Engineer Intern",
+        "Software Engineer Internship",
+        "Machine Learning Internship"
+    ]
     
     location = "United States" # or specific city
-    results_wanted = 70 # Adjust as needed
-    hours_old = 24 # Only last 24 hours
+    results_wanted = 70 
+    hours_old = 24 
     
     all_jobs = []
 
     for term in search_terms:
-        print(f"Scraping for: {term} (Internship)")
+        print(f"Scraping for: {term}")
         try:
             jobs = scrape_jobs(
                 site_name=site_names,
@@ -50,13 +56,10 @@ def scrape():
     # Combine all results
     combined_jobs = pd.concat(all_jobs, ignore_index=True)
     
-    # Remove duplicates based on job_url (or description/title if url differs)
-    # Using job_url is safest if available, but sometimes urls differ slightly. 
-    # Let's drop duplicates by 'id' if it exists or 'job_url' or subset of fields
+    # Remove duplicates based on job_url
     if 'job_url' in combined_jobs.columns:
         combined_jobs = combined_jobs.drop_duplicates(subset=['job_url'])
     else:
-        # Fallback to title + company as uniqueness check
         combined_jobs = combined_jobs.drop_duplicates(subset=['title', 'company'])
         
     print(f"Total unique jobs found: {len(combined_jobs)}")
@@ -66,10 +69,8 @@ def scrape():
     os.makedirs(output_dir, exist_ok=True)
     
     # Save as JSON for the AI step
-    # Convert date objects to string for JSON serialization
     jobs_dict = combined_jobs.to_dict(orient='records')
     
-    # Helper to handle non-serializable objects (like dates)
     def json_serial(obj):
         if isinstance(obj, (datetime, date)):
             return obj.isoformat()
