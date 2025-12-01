@@ -240,10 +240,11 @@ def main():
     unique_jobs = {}
     for job in jobs:
         # 创建一个唯一键：公司名 + 职位名 (转小写去除空格干扰)
-        key = (
-            (job.get("company") or "").strip().lower(),
-            (job.get("title") or "").strip().lower()
-        )
+        # 强制转 str 避免 None/NaN (float) 报错
+        company = str(job.get("company") or "").strip().lower()
+        title = str(job.get("title") or "").strip().lower()
+        key = (company, title)
+        
         if key not in unique_jobs:
             unique_jobs[key] = job
     
