@@ -1,0 +1,44 @@
+name: Daily Job Scraper
+
+on:
+  schedule:
+    # Runs at 08:00 UTC every Monday through Friday
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch: # Allows manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r job_automation/requirements.txt
+
+      - name: Scrape Jobs
+        run: python job_automation/scrape_jobs.py
+
+      - name: Filter and Summarize (AI)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python job_automation/process_jobs.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'Job Bot'
+          git config --global user.email 'bot@example.com'
+          git add _posts/*.md
+          git commit -m "Add daily job posts [skip ci]" || echo "No changes to commit"
+          git push
+
