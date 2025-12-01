@@ -2,28 +2,12 @@ import sys
 import os
 import csv
 import json
-from datetime import datetime, date
+from datetime import datetime
 
 # Add the JobSpy directory to the python path so we can import it
-# Use absolute path to be safe
-current_dir = os.path.dirname(os.path.abspath(__file__))
-jobspy_path = os.path.join(current_dir, 'JobSpy')
-if jobspy_path not in sys.path:
-    sys.path.append(jobspy_path)
+sys.path.append(os.path.join(os.path.dirname(__file__), 'JobSpy'))
 
-print(f"Added {jobspy_path} to sys.path")
-
-try:
-    from jobspy import scrape_jobs
-except ImportError as e:
-    print(f"Error importing jobspy: {e}")
-    print(f"Current sys.path: {sys.path}")
-    print(f"Contents of {jobspy_path}:")
-    try:
-        print(os.listdir(jobspy_path))
-    except Exception as list_err:
-        print(f"Could not list dir: {list_err}")
-    raise e
+from jobspy import scrape_jobs
 
 def scrape():
     print("Starting job scrape...")
@@ -64,6 +48,8 @@ def scrape():
         if isinstance(obj, (datetime, date)):
             return obj.isoformat()
         return str(obj)
+
+    from datetime import date
     
     output_file = os.path.join(output_dir, 'raw_jobs.json')
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -73,3 +59,4 @@ def scrape():
 
 if __name__ == "__main__":
     scrape()
+

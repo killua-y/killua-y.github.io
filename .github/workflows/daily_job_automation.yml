@@ -16,12 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Checkout JobSpy
-        uses: actions/checkout@v4
-        with:
-          repository: speedyapply/JobSpy
-          path: job_automation/JobSpy
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
