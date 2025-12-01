@@ -1,155 +1,182 @@
 # Daily Job Picks - 2025-12-01
 
-## [Research Engineer Intern (Doubao (Seed) - Machine Learning System) - 2025 Summer (MS)](https://www.linkedin.com/jobs/view/4334895316)
-**Company:** ByteDance | **Location:** Seattle, WA | **Score:** 95/100
+## [Sr. Software Dev. Engineer/MLE, AGI Customization](https://www.indeed.com/viewjob?jk=8ff516c5f6821f96)
+**Company:** Amazon.com | **Location:** Boston, MA, US | **Score:** 90/100
 
-**Reason:** Excellent match given strong ML system focus, research and engineering blend, aligns perfectly with AI/ML interests and current master's level.
+**Reason:** Highly relevant ML internship working on LLMs and advanced AI, at a level suitable for a master's student with ML experience.
 
-**Summary:** Research Engineer Intern focused on machine learning system development, model deployment, and AI infrastructure for large-scale ML applications.
-
----
-
-## [Software Engineer Intern](https://www.linkedin.com/jobs/view/4306830206)
-**Company:** Moloco | **Location:** Seattle, WA | **Score:** 90/100
-
-**Reason:** Highly relevant internship with strong alignment to ads/RTB, recommender systems, backend engineering, and ML/AI interests.
-
-**Summary:** Software Engineer Intern likely working on backend infrastructure and ML-driven adtech/recommendation systems leveraging data and realtime processing.
+**Summary:** Internship role focused on machine learning engineering for leading AGI LLM customization including fine tuning and distillation technologies.
 
 ---
 
-## [Data Science Intern](https://www.linkedin.com/jobs/view/4306812965)
-**Company:** Moloco | **Location:** Redwood City, CA | **Score:** 90/100
+## [Sr. Software Dev. Engineer/MLE, AGI Customization](https://www.indeed.com/viewjob?jk=ffc102b9330986b9)
+**Company:** Amazon.com | **Location:** Sunnyvale, CA, US | **Score:** 90/100
 
-**Reason:** Strong match to interests and skills in recommender systems, ML and ads/RTB; internship level fits early career.
+**Reason:** Internship matches candidate’s AI/ML skills, with emphasis on LLMs and generative AI, strong technical challenge.
 
-**Summary:** Data Science Intern working on ML modeling, recommendation algorithms, and large-scale data processing for adtech platforms.
-
----
-
-## [Data Scientist, Intern (Undergraduate)](https://www.linkedin.com/jobs/view/4340191254)
-**Company:** Lensa | **Location:** Pittsburgh, PA | **Score:** 80/100
-
-**Reason:** Relevant internship with ML and data science focus; fits master's level ML experience well, though internship described as undergraduate level.
-
-**Summary:** Data Scientist Intern role focused on applying machine learning and data analytics to solve business problems using Python, ML frameworks.
+**Summary:** Machine learning engineering internship focused on developing novel LLM training techniques to advance generative AI capabilities.
 
 ---
 
-## [Software Engineer Intern - Summer 2026](https://www.linkedin.com/jobs/view/4296144404)
-**Company:** Kensho Technologies | **Location:** Cambridge, MA | **Score:** 75/100
+## [Sr. Software Dev. Engineer/MLE, AGI Customization](https://www.indeed.com/viewjob?jk=938e5eb5de094e76)
+**Company:** Amazon.com | **Location:** Bellevue, WA, US | **Score:** 90/100
 
-**Reason:** Relevant internship involving software engineering with potential ML/data platform involvement; strong backend and early career match.
+**Reason:** Excellent fit given candidate’s ML background and research interests in reinforcement learning and LLMs.
 
-**Summary:** Software Engineer Intern supporting backend engineering efforts, potentially including analytics, large-scale data processing, and ML integration.
-
----
-
-## [Internship - Computer Vision Engineer](https://www.linkedin.com/jobs/view/4340148135)
-**Company:** ExecutivePlacements.com | **Location:** Chicago, IL | **Score:** 75/100
-
-**Reason:** Relevant ML/AI internship focused on computer vision; fits machine learning background though less backend emphasis.
-
-**Summary:** Computer Vision Engineer Intern developing and implementing computer vision models and AI systems using relevant ML frameworks.
+**Summary:** Machine learning engineering internship in AGI focused on LLM innovations and advanced customization methods for generative AI.
 
 ---
 
-## [Software Engineering Intern, Summer 2026](https://www.linkedin.com/jobs/view/4324885431)
-**Company:** The Walt Disney Company | **Location:** San Francisco, CA | **Score:** 70/100
+## [Sr. Software Dev. Engineer/MLE, AGI Customization](https://www.indeed.com/viewjob?jk=de8c31a151884e69)
+**Company:** Amazon.com | **Location:** Sunnyvale, CA, US | **Score:** 90/100
 
-**Reason:** Good fit as internship with backend/software engineering focus and possibility of working on large-scale systems in a tech-forward company.
+**Reason:** Highly relevant AI/ML internship aligned with candidate’s expertise in ML and reinforcement learning models.
 
-**Summary:** Software Engineering Intern role encompasses software development, focusing on scalable systems and possibly distributed backend services.
-
----
-
-## [Data Science Intern (Summer 2026)](https://www.linkedin.com/jobs/view/4296476992)
-**Company:** DriveTime | **Location:** Tempe, AZ | **Score:** 70/100
-
-**Reason:** Relevant ML/data intern role fitting skills; company context less focused on ads/RTB but appropriate for master's student with ML experience.
-
-**Summary:** Data Science Intern working with large datasets to build predictive models and analyze business metrics, using Python and ML techniques.
+**Summary:** SDE/MLE internship focusing on building novel LLM training techniques and fine tuning for multimodal generative AI solutions.
 
 ---
 
-## [Software Intern](https://www.linkedin.com/jobs/view/4340147952)
-**Company:** Thermo Fisher Scientific | **Location:** Pleasanton, CA | **Score:** 65/100
+## [Software Development Engineer, Communications and Corporate Responsibility, Operations and Technology](https://www.indeed.com/viewjob?jk=ab1b375d334ed244)
+**Company:** Amazon.com | **Location:** Seattle, WA, US | **Score:** 85/100
 
-**Reason:** Internship position matches early-career level; likely backend dev focus but lacks explicit ML or AI focus and tech stack details.
+**Reason:** Relevant internship with application of large language models and AI to real-world problems; aligns well with interests and skills.
 
-**Summary:** Software Intern role likely involves development and maintenance of software products, potentially using standard backend technologies.
-
----
-
-## [Software Developer Intern - NOAA](https://www.linkedin.com/jobs/view/4340351041)
-**Company:** Lensa | **Location:** Reston, VA | **Score:** 65/100
-
-**Reason:** Internship with backend software focus; relevance medium due to public sector but aligns with skills in backend and data platforms.
-
-**Summary:** Software Developer Intern focused on developing software solutions, likely including backend components and data systems for NOAA projects.
+**Summary:** Software engineer building solutions with Generative AI and NLP to process large-scale media and social data, supporting communication and brand management.
 
 ---
 
-## [Software Engineer Intern (Class of 2027)](https://www.linkedin.com/jobs/view/4340390951)
-**Company:** Lensa | **Location:** Chicago, IL | **Score:** 65/100
+## [Amazon Industrial Robotics - Applied Scientist II Intern / Co-op - 2026, Amazon Industrial Robotics](https://www.indeed.com/viewjob?jk=8b8833dd985f15d7)
+**Company:** Amazon.com | **Location:** North Reading, MA, US | **Score:** 85/100
 
-**Reason:** Early-career internship matching backend interests; no explicit ML/AI mentioned but role suits software engineering skills.
+**Reason:** Highly relevant co-op focused on robotics, AI, ML, and large-scale system development; excellent match to candidate’s profile.
 
-**Summary:** Software Engineer Intern role concentrating on backend services development and engineering tasks, potentially across databases and distributed systems.
+**Summary:** Internship focused on developing advanced robotics systems using AI, machine learning, and control systems for automation at scale.
 
 ---
 
-## [R&D Software Engineering Internship](https://www.linkedin.com/jobs/view/4340128216)
-**Company:** ExecutivePlacements.com | **Location:** Santa Rosa, CA | **Score:** 65/100
+## [Amazon Industrial Robotics - Applied Scientist II Intern / Co-op - 2026, Amazon Industrial Robotics](https://www.indeed.com/viewjob?jk=d72856755c22f7a6)
+**Company:** Amazon.com | **Location:** Seattle, WA, US | **Score:** 85/100
 
-**Reason:** Potential match with research and software development focus; unclear details, but aligns with early-career interests.
+**Reason:** Strong fit for candidate's interest in AI, ML, and large-scale system development in robotics; internship/co-op position.
 
-**Summary:** R&D Software Engineering Intern contributing to research projects involving software design, potentially including backend and ML components.
+**Summary:** Applied Scientist intern role contributing to advanced robotics research and software development using ML and AI at industrial scale.
+
+---
+
+## [Amazon Industrial Robotics - Applied Scientist II Intern / Co-op - 2026, Amazon Industrial Robotics](https://www.indeed.com/viewjob?jk=47cc7caa792eb696)
+**Company:** Amazon.com | **Location:** Westborough, MA, US | **Score:** 85/100
+
+**Reason:** Excellent alignment with candidate’s ML, AI, and robotics interests in a co-op internship role.
+
+**Summary:** Co-op/internship engineering role working with robotics and advanced AI/ML systems to build next-generation automation solutions.
+
+---
+
+## [Software Engineer Backend/Platform Systems I (Intern) - United States](https://www.linkedin.com/jobs/view/4340172671)
+**Company:** ExecutivePlacements.com | **Location:** San Jose, CA | **Score:** 80/100
+
+**Reason:** Strongly relevant internship focused on backend/platform systems; location in tech hub (San Jose) is a plus.
+
+**Summary:** Backend and platform systems software engineering internship, likely involving scalable backend infrastructure work.
+
+---
+
+## [Internship - Python and FastAPI/Django](https://www.linkedin.com/jobs/view/4340306041)
+**Company:** AXENTRA OS | **Location:** California, United States | **Score:** 80/100
+
+**Reason:** Strong programming internship aligned with candidate's Python and backend development expertise.
+
+**Summary:** Internship involving Python programming with backend frameworks such as FastAPI and Django.
+
+---
+
+## [Summer 2026 - Data, AI, & Analytics Intern](https://www.indeed.com/viewjob?jk=ccdc75f7610673b4)
+**Company:** Shamrock Foods Company | **Location:** Phoenix, AZ, US | **Score:** 80/100
+
+**Reason:** Highly relevant internship involving AI, ML, data pipelines and analytics, matching candidate’s skills and preferences.
+
+**Summary:** 11-week internship focused on data and analytics, involving machine learning model support, data pipeline creation, and data transformation to support business analytics.
+
+---
+
+## [Backend Software Developer Intern (Summer '26)](https://www.linkedin.com/jobs/view/4325270068)
+**Company:** Todd | **Location:** Los Angeles, CA | **Score:** 75/100
+
+**Reason:** Backend internship aligns well with candidate's backend and software engineering skills, with good location match.
+
+**Summary:** Summer 2026 backend software developer internship. (No additional information provided.)
+
+---
+
+## [Data Engineer Intern](https://www.linkedin.com/jobs/view/4340743499)
+**Company:** Ameritas | **Location:** Lincoln, NE | **Score:** 75/100
+
+**Reason:** Relevant internship in data engineering aligns well with candidate's machine learning and data platform skills.
+
+**Summary:** Data engineering internship focusing on designing, building, and maintaining data systems and pipelines. (No further details.)
+
+---
+
+## [Intern, Data Science](https://www.linkedin.com/jobs/view/4324979653)
+**Company:** Hyundai Motor Company | **Location:** Fountain Valley, CA | **Score:** 75/100
+
+**Reason:** Strongly relevant internship aligned with candidate’s machine learning and data science background.
+
+**Summary:** Data science internship role, likely involving analysis, modeling, and ML tasks related to business or engineering data.
 
 ---
 
 ## [Software Developer - Internship](https://www.linkedin.com/jobs/view/4340360976)
-**Company:** Lensa | **Location:** Rockville, MD | **Score:** 60/100
+**Company:** Lensa | **Location:** Rockville, MD | **Score:** 70/100
 
-**Reason:** Internship relevant for early career with software engineering focus; no details about ML or AI but aligns with backend skills.
+**Reason:** Internship in software development which aligns well with candidate’s software engineering skills. Missing detailed description reduces confidence.
 
-**Summary:** Software Developer Intern role likely involves coding, debugging, and contributing to development projects with typical fullstack/backend technologies.
-
----
-
-## [Software Engineer Intern (Summer 2026)](https://www.linkedin.com/jobs/view/4293980312)
-**Company:** DriveTime | **Location:** Tempe, AZ | **Score:** 60/100
-
-**Reason:** Relevant early-career backend internship but no clear ML/AI presence reduces match to stronger preferences.
-
-**Summary:** Software Engineer Intern working on backend software development, REST APIs, and system components for enterprise applications.
+**Summary:** Software developer internship focusing on coding and software development tasks. (No job description available)
 
 ---
 
-## [Intern, System Software Engineer - CXL](https://www.linkedin.com/jobs/view/4305788423)
-**Company:** Samsung Semiconductor | **Location:** San Jose, CA | **Score:** 60/100
+## [Software Engineer, Intern - Summer 2026, Foster City](https://www.linkedin.com/jobs/view/4340382374)
+**Company:** ExecutivePlacements.com | **Location:** Foster City, CA | **Score:** 70/100
 
-**Reason:** Relevant internship in system software with some complexity; less involvement with ML/AI but suitable for backend and systems skills.
+**Reason:** Software engineer internship matches candidate's skills and interests; lack of details reduces clarity.
 
-**Summary:** System Software Engineering Intern developing low-level software, possibly involving hardware interfaces and performance optimization.
-
----
-
-## [Software Engineering Intern](https://www.linkedin.com/jobs/view/4339438776)
-**Company:** Base Power Company | **Location:** Austin, TX | **Score:** 55/100
-
-**Reason:** Relevant internship with potential backend exposure; limited info to confirm ML/AI match but suitable for early career.
-
-**Summary:** Software Engineering Intern to assist with software design, development, and testing possibly involving backend and system software.
+**Summary:** Software engineering internship scheduled for summer 2026. (No detailed description provided.)
 
 ---
 
-## [Summer 2026 Software Engineer Graduate Intern](https://www.linkedin.com/jobs/view/4339448789)
-**Company:** ExecutivePlacements.com | **Location:** New York, NY | **Score:** 55/100
+## [FanDuel - Software Engineering Intern - Summer 2026, application via RippleMatch](https://www.linkedin.com/jobs/view/4340162892)
+**Company:** RippleMatch | **Location:** New York, NY | **Score:** 70/100
 
-**Reason:** Early career internship with backend development; minimal info on ML/AI reduces higher relevance.
+**Reason:** Internship in software engineering with a company likely involving backend/ML systems. Location and domain fit well.
 
-**Summary:** Graduate Software Engineer Intern working on software projects likely involving backend development and engineering best practices.
+**Summary:** Software engineering internship at FanDuel focused on scalable software and likely involving modern tech stack. (Details are missing)
+
+---
+
+## [FanDuel - Software Engineering Intern - Summer 2026, application via RippleMatch](https://www.linkedin.com/jobs/view/4340772198)
+**Company:** RippleMatch | **Location:** Atlanta, GA | **Score:** 70/100
+
+**Reason:** Relevant internship with software engineering role; FanDuel engages in backend and ML-related areas, suitable for candidate.
+
+**Summary:** Software engineering internship at FanDuel for summer 2026. (No detailed description is provided.)
+
+---
+
+## [Intern, Data Analytics & Performance Optimization](https://www.linkedin.com/jobs/view/4325221031)
+**Company:** Hyundai Motor Company | **Location:** Fountain Valley, CA | **Score:** 70/100
+
+**Reason:** Relevant for candidate’s data platform and analytics skills but domain is automotive which is secondary.
+
+**Summary:** Internship focusing on data analytics and performance optimization tasks, possibly involving data platforms and analysis.
+
+---
+
+## [Data Analytics Intern - Business Intelligence](https://www.linkedin.com/jobs/view/4340383841)
+**Company:** Ameritas | **Location:** Lincoln, NE | **Score:** 70/100
+
+**Reason:** Relevant internship in analytics and data engineering areas, which suit the candidate’s skills.
+
+**Summary:** Internship in data analytics focused on business intelligence, data transformation, and modeling.
 
 ---
 
