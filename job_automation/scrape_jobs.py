@@ -66,7 +66,7 @@ def scrape():
     # This is necessary because some sites (like iHire) spam listings with "Senior" roles 
     # even when searching for "Intern"
     
-    exclusion_keywords = ["Senior", "Sr.", "Staff", "Principal", "Lead", "Manager", "Director", "VP", "Head of", "Architect", "phd"]
+    exclusion_keywords = ["Senior", "Sr.", "Staff", "Principal", "Lead", "Manager", "Director", "VP", "Head of", "Architect", "PhD"]
     
     def is_excluded(title):
         if not isinstance(title, str):
