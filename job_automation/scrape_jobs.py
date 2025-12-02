@@ -27,7 +27,7 @@ def scrape():
     ]
     
     location = "United States" # or specific city
-    results_wanted = 100 
+    results_wanted = 150 
     hours_old = 24 
     
     all_jobs = []
