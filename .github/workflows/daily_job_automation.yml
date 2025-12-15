@@ -5,7 +5,7 @@ on:
     # Runs at 09:00 PST (Pacific Standard Time)
     # PST is UTC-8, so 09:00 PST = 17:00 UTC
     # Note: During Daylight Saving Time (PDT, UTC-7), this will run at 10:00 PDT
-    - cron: '0 17 * * 1-5'
+    - cron: '0 17 * * *'
   workflow_dispatch: # Allows manual triggering
 
 permissions:
