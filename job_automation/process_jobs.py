@@ -251,6 +251,14 @@ def main():
     jobs = list(unique_jobs.values())
     print(f"After deduplication: {len(jobs)} jobs.")
 
+    # 过滤掉特定公司 (TikTok, ByteDance)
+    excluded_companies = ["tiktok", "bytedance"]
+    jobs = [
+        j for j in jobs 
+        if not any(ex in str(j.get("company") or "").lower() for ex in excluded_companies)
+    ]
+    print(f"After excluded companies filter: {len(jobs)} jobs.")
+
     # 处理全部岗位
     filtered_jobs = filter_and_summarize_jobs(jobs)
 
