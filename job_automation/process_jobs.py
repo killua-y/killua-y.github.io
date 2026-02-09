@@ -252,7 +252,7 @@ def main():
     print(f"After deduplication: {len(jobs)} jobs.")
 
     # 过滤掉特定公司 (TikTok, ByteDance)
-    excluded_companies = ["tiktok", "bytedance"]
+    excluded_companies = ["tiktok", "bytedance", "Zoox", "IBM"]
     jobs = [
         j for j in jobs 
         if not any(ex in str(j.get("company") or "").lower() for ex in excluded_companies)
