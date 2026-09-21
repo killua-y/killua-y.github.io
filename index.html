@@ -10,6 +10,87 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Poker Trainer, shown full-screen at #poker. It runs in an iframe so its
+			   own dark theme and global html/body rules stay out of this page. */
+			body.poker-active {
+				overflow: hidden;
+			}
+
+			#poker-overlay {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 10010;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				flex-direction: column;
+				background: #0b0d11;
+			}
+
+			#poker-overlay[hidden] {
+				display: none;
+			}
+
+			#poker-overlay .poker-bar {
+				position: relative;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				-webkit-flex-shrink: 0;
+				flex-shrink: 0;
+				height: 44px;
+				padding: 0 14px;
+				background: #12151c;
+				border-bottom: solid 1px #262b36;
+				color: #8b93a4;
+				font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+				font-size: 13px;
+				letter-spacing: 0.02em;
+			}
+
+			#poker-overlay .poker-bar a {
+				border-bottom: 0;
+				color: #cfd5e1;
+			}
+
+			/* Centred independently of the links so hiding it on narrow screens does
+			   not collapse the space that separates them. */
+			#poker-overlay .poker-title {
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+				color: #8b93a4;
+			}
+
+			#poker-overlay .poker-frame-wrap {
+				position: relative;
+				-webkit-flex: 1;
+				flex: 1;
+				min-height: 0;
+			}
+
+			#poker-overlay iframe {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+
+			@media screen and (max-width: 480px) {
+				#poker-overlay .poker-title {
+					display: none;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -174,6 +255,16 @@
 
 			</div>
 
+		<!-- Poker Trainer -->
+			<div id="poker-overlay" hidden>
+				<div class="poker-bar">
+					<a href="#four">&larr; Back to site</a>
+					<span class="poker-title">Preflop Trainer</span>
+					<a href="poker/" target="_blank" rel="noopener">Open in new tab</a>
+				</div>
+				<div class="poker-frame-wrap"></div>
+			</div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -182,6 +273,50 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				/* #poker swaps the page for the trainer instead of scrolling, so it is
+				   routed here rather than through the template's scrolly anchors. */
+				(function () {
+					var HASH = '#poker';
+					var overlay = document.getElementById('poker-overlay');
+					var wrap = overlay.querySelector('.poker-frame-wrap');
+					var navLink = document.querySelector('#nav a[href="' + HASH + '"]');
+					var frame = null;
+
+					function show() {
+						if (!frame) {
+							frame = document.createElement('iframe');
+							frame.src = 'poker/';
+							frame.title = 'Preflop Trainer';
+							wrap.appendChild(frame);
+						}
+						overlay.hidden = false;
+						document.body.classList.add('poker-active');
+						if (navLink) {
+							// main.js locks nav highlighting on click and only releases it from a
+							// section's scroll handler, which #poker never triggers.
+							navLink.classList.remove('active-locked');
+							navLink.classList.add('active');
+						}
+						// Let the trainer's number-key shortcuts work without a click first.
+						try { frame.focus(); } catch (e) {}
+					}
+
+					function hide() {
+						overlay.hidden = true;
+						document.body.classList.remove('poker-active');
+						if (navLink) navLink.classList.remove('active', 'active-locked');
+					}
+
+					function sync() {
+						if (window.location.hash === HASH) show();
+						else hide();
+					}
+
+					window.addEventListener('hashchange', sync);
+					sync();
+				})();
+			</script>
 
 	</body>
 </html>

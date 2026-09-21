@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b0d11" />
+    <title>Preflop Trainer</title>
+    <link rel="stylesheet" href="./css/styles.css?v=8" />
+  </head>
+  <body>
+    <section id="screen-welcome" class="screen screen-welcome">
+      <div class="panel welcome-panel">
+        <p class="eyebrow">9-max · ~100bb · ante in play</p>
+        <h1>Preflop Trainer</h1>
+        <p class="lede">
+          Practice raise-first-in, facing a raise, and vs 3-bet charts. Pick a
+          spot type and session length, then choose the exact action for each
+          hand.
+        </p>
+
+        <fieldset class="picker">
+          <legend>Which spot?</legend>
+          <div class="mode-options">
+            <label class="chip mode-chip">
+              <input type="radio" name="session-mode" value="open" />
+              <span>
+                <strong>Open</strong>
+                <em>Folds to you</em>
+              </span>
+            </label>
+            <label class="chip mode-chip">
+              <input type="radio" name="session-mode" value="3b" />
+              <span>
+                <strong>3-bet</strong>
+                <em>Facing an open</em>
+              </span>
+            </label>
+            <label class="chip mode-chip">
+              <input type="radio" name="session-mode" value="4b" />
+              <span>
+                <strong>4-bet</strong>
+                <em>Facing a 3-bet</em>
+              </span>
+            </label>
+            <label class="chip mode-chip">
+              <input type="radio" name="session-mode" value="any" checked />
+              <span>
+                <strong>Any</strong>
+                <em>Mixed</em>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="picker">
+          <legend>How many hands?</legend>
+          <div class="length-options">
+            <label class="chip length-chip">
+              <input type="radio" name="session-length" value="10" checked />
+              <span>10</span>
+            </label>
+            <label class="chip length-chip">
+              <input type="radio" name="session-length" value="25" />
+              <span>25</span>
+            </label>
+            <label class="chip length-chip">
+              <input type="radio" name="session-length" value="50" />
+              <span>50</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button id="start-btn" class="btn primary" type="button" disabled>
+          Loading charts…
+        </button>
+        <p id="load-error" class="error-text" hidden></p>
+      </div>
+    </section>
+
+    <section id="screen-trainer" class="screen screen-trainer" hidden>
+      <header class="trainer-header">
+        <div class="header-left">
+          <div id="spot-title" class="spot-title">—</div>
+          <div id="history-line" class="history-line"></div>
+        </div>
+        <div class="header-right">
+          <div id="progress" class="progress">Hand 1 of 10</div>
+          <div id="score" class="score">0 correct</div>
+        </div>
+      </header>
+
+      <div id="table-root" class="table-root"></div>
+
+      <div class="action-dock">
+        <div id="feedback" class="feedback" hidden></div>
+        <div id="action-buttons" class="action-buttons"></div>
+        <button id="next-btn" class="btn primary next-btn" type="button" hidden>
+          Next hand
+        </button>
+      </div>
+
+      <section id="review" class="review" hidden>
+        <div class="review-head">
+          <h2 id="review-title" class="review-title">Chart</h2>
+          <div id="review-legend" class="review-legend"></div>
+        </div>
+        <p class="review-note">
+          Dimmed cells are never dealt — hands outside the opening range, plus
+          hands that fold in every chart.
+        </p>
+        <div class="matrix-scroll">
+          <div id="matrix-root" class="matrix-root"></div>
+        </div>
+      </section>
+    </section>
+
+    <section id="screen-results" class="screen screen-results" hidden>
+      <div class="panel results-panel">
+        <p class="eyebrow">Practice session</p>
+        <h1>Session complete</h1>
+        <p id="results-score" class="results-score">You got 0 / 10 correct</p>
+        <p id="results-pct" class="results-pct">0%</p>
+        <button id="again-btn" class="btn primary" type="button">
+          Play again
+        </button>
+      </div>
+    </section>
+
+    <script src="./js/sizing.js?v=8"></script>
+    <script src="./js/actions.js?v=8"></script>
+    <script src="./js/data.js?v=8"></script>
+    <script src="./js/selector.js?v=8"></script>
+    <script src="./js/trainer.js?v=8"></script>
+    <script src="./js/table.js?v=8"></script>
+    <script src="./js/matrix.js?v=8"></script>
+    <script src="./js/app.js?v=8"></script>
+  </body>
+</html>
